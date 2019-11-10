@@ -16,9 +16,11 @@ namespace AutomobileExpertSystem.TestModule
         {
             Console.Write("Введите ФИО: ");
             string name = Config.adminName;
+            Console.WriteLine(name);
             //string name = Console.ReadLine();
             Console.Write("Введите тему: ");
             string topic = Config.defaultTopic;
+            Console.WriteLine(topic);
             //string topic = Console.ReadLine();
             Test test = new Test(name, topic);
             return test;

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace AutomobileExpertSystem
 {
@@ -9,6 +10,8 @@ namespace AutomobileExpertSystem
         private string question;
 
         private char answer;
+
+        private List<string> variants = new List<string>();
 
         public char getAnswer()
         {
@@ -40,7 +43,7 @@ namespace AutomobileExpertSystem
         {
             Console.WriteLine("На вопрос: ");
             showQuestion();
-            Console.Write("Вы ответили ");
+            Console.Write("Вы ответили так - ");
             Console.WriteLine(answer + ".");
         }
         public void showQuestion()

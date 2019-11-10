@@ -1,3 +1,10 @@
 C:\Users\fi777\OneDrive\Desktop\University\ExpertSystems\TestSystem\TestSystem\obj\Debug\netcoreapp2.1\TestSystem.csprojAssemblyReference.cache
 C:\Users\fi777\OneDrive\Desktop\University\ExpertSystems\TestSystem\TestSystem\obj\Debug\netcoreapp2.1\TestSystem.AssemblyInfoInputs.cache
 C:\Users\fi777\OneDrive\Desktop\University\ExpertSystems\TestSystem\TestSystem\obj\Debug\netcoreapp2.1\TestSystem.AssemblyInfo.cs
+C:\Users\fi777\OneDrive\Desktop\University\ExpertSystems\TestSystem\TestSystem\bin\Debug\netcoreapp2.1\TestSystem.deps.json
+C:\Users\fi777\OneDrive\Desktop\University\ExpertSystems\TestSystem\TestSystem\bin\Debug\netcoreapp2.1\TestSystem.runtimeconfig.json
+C:\Users\fi777\OneDrive\Desktop\University\ExpertSystems\TestSystem\TestSystem\bin\Debug\netcoreapp2.1\TestSystem.runtimeconfig.dev.json
+C:\Users\fi777\OneDrive\Desktop\University\ExpertSystems\TestSystem\TestSystem\bin\Debug\netcoreapp2.1\TestSystem.dll
+C:\Users\fi777\OneDrive\Desktop\University\ExpertSystems\TestSystem\TestSystem\bin\Debug\netcoreapp2.1\TestSystem.pdb
+C:\Users\fi777\OneDrive\Desktop\University\ExpertSystems\TestSystem\TestSystem\obj\Debug\netcoreapp2.1\TestSystem.dll
+C:\Users\fi777\OneDrive\Desktop\University\ExpertSystems\TestSystem\TestSystem\obj\Debug\netcoreapp2.1\TestSystem.pdb

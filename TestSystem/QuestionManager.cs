@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace AutomobileExpertSystem
@@ -15,27 +16,28 @@ namespace AutomobileExpertSystem
 
         private void init()
         {
-            int i = 1;
-            questionDatabase.Add(new Question(i, 'б', "Управление - это: ")); i++;
-            questionDatabase.Add(new Question(i, 'б', "Управление - это: ")); i++;
-            questionDatabase.Add(new Question(i, 'б', "Управление - это: ")); i++;
-            questionDatabase.Add(new Question(i, 'б', "Управление - это: ")); i++;
-            questionDatabase.Add(new Question(i, 'б', "Управление - это: ")); i++;
-            questionDatabase.Add(new Question(i, 'б', "Управление - это: ")); i++;
-            questionDatabase.Add(new Question(i, 'б', "Управление - это: ")); i++;
-            questionDatabase.Add(new Question(i, 'б', "Управление - это: ")); i++;
-            questionDatabase.Add(new Question(i, 'б', "Управление - это: ")); i++;
-            questionDatabase.Add(new Question(i, 'б', "Управление - это: ")); i++;
-        }
+            string path = Config.defaultTestFile;
+            string testText = string.Empty;
 
-        public QuestionDatabase autoStart()
-        {
-            LinkedListNode<Question> firstNode = questionDatabase.getQuestions().First;
-            for (LinkedListNode<Question> question = firstNode; question != null; question = question.Next)
+            if (File.Exists(path))
             {
-                question.Value.show();
+                testText = File.ReadAllText(path, Encoding.UTF8);
             }
-            return this.questionDatabase;
+
+            string[] questions = testText.Split("\r\n\r\n");
+
+            foreach (string question in questions)
+            {
+                string[] buffer = question.Split("\r\n");
+                if (buffer[0].Equals(string.Empty)) buffer.
+                int id = Int32.Parse(buffer[0]);
+                string questionText = buffer[1];
+                List<string> variants = new List<string>();
+                for (int i = 2; i < buffer.Length; i++)
+                {
+                    variants.Add(buffer[i]);
+                }
+            }
         }
 
         public QuestionDatabase manualStart() 
