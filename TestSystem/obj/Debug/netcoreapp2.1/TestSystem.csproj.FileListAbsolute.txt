@@ -1,0 +1,3 @@
+C:\Users\fi777\OneDrive\Desktop\University\ExpertSystems\TestSystem\TestSystem\obj\Debug\netcoreapp2.1\TestSystem.csprojAssemblyReference.cache
+C:\Users\fi777\OneDrive\Desktop\University\ExpertSystems\TestSystem\TestSystem\obj\Debug\netcoreapp2.1\TestSystem.AssemblyInfoInputs.cache
+C:\Users\fi777\OneDrive\Desktop\University\ExpertSystems\TestSystem\TestSystem\obj\Debug\netcoreapp2.1\TestSystem.AssemblyInfo.cs
