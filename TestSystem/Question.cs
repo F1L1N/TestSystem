@@ -56,6 +56,12 @@ namespace TestSystem
             Console.Write("правильный ответ - ");
             Console.WriteLine(answer + ".");
         }
+
+        public void showRightAnswer()
+        {
+            Console.WriteLine("На вопрос {0} правильный ответ - {1}", id, answer);
+        }
+
         public void showQuestion()
         {
             Console.WriteLine(question);

@@ -58,10 +58,14 @@ namespace TestSystem.TestModule
             }
             else
             {
-                Console.WriteLine("Ошибки допущены в следующих вопросах: ");
+                Console.Write("Ошибки допущены в следующих вопросах: ");
                 foreach (var entry in test.wrongAnswers)
                 {
-                    //Console.Write(entry + " ");
+                    Console.Write(entry + " ");
+                }
+                Console.WriteLine();
+                foreach (var entry in test.wrongAnswers)
+                {
                     LinkedList<Question> questions = database.getQuestions();
                     LinkedListNode<Question> firstNode = questions.First;
                     for (LinkedListNode<Question> question = firstNode; question != null; question = question.Next)
@@ -69,11 +73,9 @@ namespace TestSystem.TestModule
                         Question node = question.Value;
                         if (node.getId() == entry)
                         {
-                            Console.WriteLine();
-                            node.showAnswer();
+                            node.showRightAnswer();
                         }
                     }
-                    Console.WriteLine();
                 }
             }
         }
