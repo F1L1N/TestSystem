@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AutomobileExpertSystem
+namespace TestSystem
 {
     class Question
     {
@@ -12,17 +12,22 @@ namespace AutomobileExpertSystem
         private char answer;
 
         private List<string> variants = new List<string>();
+        public Question(int id, string question, List<string> variants, char answer)
+        {
+            this.id = id;
+            this.answer = answer;
+            this.question = question;
+            this.variants = variants;
+        }
 
         public char getAnswer()
         {
             return answer;
         }
 
-        public Question(int id, char answer, string question)
+        public int getId()
         {
-            this.id = id;
-            this.answer = answer;
-            this.question = question;
+            return id;
         }
 
         private string answerOnQuestion()
@@ -35,7 +40,12 @@ namespace AutomobileExpertSystem
 
         public string show()
         {
+            Console.WriteLine("\nНомер вопроса: " + id);
             Console.WriteLine(question);
+            foreach (string variant in variants)
+            {
+                Console.WriteLine(variant);
+            }
             return answerOnQuestion();
         }
 
@@ -43,7 +53,7 @@ namespace AutomobileExpertSystem
         {
             Console.WriteLine("На вопрос: ");
             showQuestion();
-            Console.Write("Вы ответили так - ");
+            Console.Write("правильный ответ - ");
             Console.WriteLine(answer + ".");
         }
         public void showQuestion()

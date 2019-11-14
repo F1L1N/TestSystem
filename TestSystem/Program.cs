@@ -1,6 +1,6 @@
-﻿using AutomobileExpertSystem.TestModule;
+﻿using TestSystem.TestModule;
 
-namespace AutomobileExpertSystem
+namespace TestSystem
 {
     class Start
     {

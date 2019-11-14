@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AutomobileExpertSystem
+namespace TestSystem
 {
     class QuestionDatabase
     {
