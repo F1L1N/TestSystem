@@ -52,6 +52,7 @@ namespace TestSystem.TestModule
             Console.WriteLine("Закончен: " + test.finishTestTime);
             Console.WriteLine("Вопросов в тесте: " + test.numberQuestions);
             Console.WriteLine("Правильных ответов: " + test.rightAnswers);
+            Console.WriteLine("Оценка: " + getMark(test.rightAnswers));
             if (test.numberQuestions == test.rightAnswers)
             {
                 Console.WriteLine("Отлично!");
@@ -80,6 +81,48 @@ namespace TestSystem.TestModule
             }
         }
 
+        public int getMark(int rightAnswers)
+        {
+            int result = 2;
+            switch (rightAnswers)
+            {
+                case 0:
+                    result = 2;
+                    break;
+                case 1:
+                    result = 2;
+                    break;
+                case 2:
+                    result = 2;
+                    break;
+                case 3:
+                    result = 2;
+                    break;
+                case 4:
+                    result = 2;
+                    break;
+                case 5:
+                    result = 3;
+                    break;
+                case 6:
+                    result = 3;
+                    break;
+                case 7:
+                    result = 4;
+                    break;
+                case 8:
+                    result = 4;
+                    break;
+                case 9:
+                    result = 5;
+                    break;
+                case 10:
+                    result = 5;
+                    break;
+            }
+            return result;
+        }
+
         public void logTest(Test test)
         {
             string[] logArray = Config.log.Split(".");
@@ -93,6 +136,7 @@ namespace TestSystem.TestModule
                 output.WriteLine("Конец теста: " + test.finishTestTime);
                 output.WriteLine("Количество заданных вопросов: " + test.numberQuestions);
                 output.WriteLine("Количество правильных вопросов: " + test.rightAnswers);
+                output.WriteLine("Оценка: " + getMark(test.rightAnswers));
                 if (test.wrongAnswers.Count == 0)
                 {
                     output.WriteLine("Список вопросов с неправильным ответом: ошибок нет.");
